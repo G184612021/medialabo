@@ -3,27 +3,50 @@
   <head>
     <meta charset="utf-8">
     <title>Projects</title>
-    <script src="practice-js/weather.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src="project.js" defer></script>
+    <link rel="stylesheet" href="project.css">
+
+    
   </head>
 
   <body>
     <!-- put navigation menu just below here -->
     <h1>天気</h1>
-     
+    <h2>どこの天気が知りたい？</h2>
+    
+     <label for="basyo">都市ID</label>
+     <input type="text" name="basyo" size="15">
+     <button id="print"> 表示</button>
+     <h3>
     <dl>
       <dt>場所</dt>
-      <dd>カイロ</dd>
+      <dd id ="names"></dd>
       <dt>天気</dt>
-      <dd>晴れ</dd>
+      <dd id="weather"></dd>
       <dt>最高気温</dt>
-      <dd>27℃</dd>
+      <dd id="temp_max"></dd>
       <dt>最低気温</dt>
-      <dd>18℃</dd>
+      <dd id="temp_min"></dd>
     </dl>
-    
+     </h3>
+    <h4> 都市コード一覧</h4>
+      <h5>
+      <dl>
+        <dd>カイロ　360630</dd>
+        <dd>モスクワ　524901</dd>
+        <dd>ヨハネスブルク　993800 </dd>
+        <dd>北京  1816670</dd>
+        <dd>東京　1850147</dd>
+        <dd>シンガポール 1880252</dd>
+        <dd>シドニー　2147714</dd>
+        <dd>ロンドン  2643743</dd>
+        <dd>パリ  2968815</dd>
+        <dd>リオデジャネイロ  3451189</dd>
+        <dd>ニューヨーク　 5128581</dd>
+        <dd>ロサンゼルス  5368361</dd>
+      </dl>
+    </h5>
 
-    <h1>My projects</h1>
-
-    <p>Welcome to my project page, showing what exciting things I am currently doing.</p>
   </body>
 </html>
